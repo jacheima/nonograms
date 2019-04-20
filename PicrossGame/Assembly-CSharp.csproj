@@ -77,6 +77,7 @@
     <Compile Include="Assets\Scripts\toggleBoxes.cs" />
     <Compile Include="Assets\Scripts\ToggleMarker.cs" />
     <Reference Include="UnityEditor.StandardEvents">
+<<<<<<< HEAD
       <HintPath>D:/PicCrossGame/PicrossGame/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
@@ -87,6 +88,18 @@
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>D:/PicCrossGame/PicrossGame/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+=======
+      <HintPath>D:/Nonogram/PicrossGame/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>D:/Nonogram/PicrossGame/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>D:/Nonogram/PicrossGame/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>D:/Nonogram/PicrossGame/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+>>>>>>> 0645c37a85b383e9657edfeab44ef5a94bfd96b1
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -269,7 +282,11 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Unity.Locator.dll</HintPath>
     </Reference>
     <Reference Include="Facebook.Unity.Settings">
+<<<<<<< HEAD
       <HintPath>D:/PicCrossGame/PicrossGame/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+=======
+      <HintPath>D:/Nonogram/PicrossGame/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+>>>>>>> 0645c37a85b383e9657edfeab44ef5a94bfd96b1
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
