@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//this file loads level 2
 public class goToLevel2 : MonoBehaviour {
 
 	// Use this for initialization
@@ -17,6 +18,6 @@ public class goToLevel2 : MonoBehaviour {
 
     private void OnMouseDown()
     {
-        SceneManager.LoadScene("Level2");   
+        SceneManager.LoadScene("Level2");   // load level 2
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//this file loads the level select menu
 public class GoToLevelSelect : MonoBehaviour {
 
 	// Use this for initialization
@@ -17,6 +18,6 @@ public class GoToLevelSelect : MonoBehaviour {
 
     private void OnMouseDown()
     {
-        SceneManager.LoadScene("LevelSelect");
+        SceneManager.LoadScene("LevelSelect"); // load level select
     }
 }

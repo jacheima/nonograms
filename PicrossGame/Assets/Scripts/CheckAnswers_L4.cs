@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//this file checks the answers for level 4
 public class CheckAnswers_L4 : MonoBehaviour {
-    public SpriteRenderer[] sr;
-    public Sprite empty;
-    public Sprite filled;
-    public Sprite xedOut;
+    public SpriteRenderer[] sr; //reference to the SpriteRenderer Components listed in this Array
+    public Sprite filled; // reference to the sprite that is being checked below
 
-    private gameManager gm;
+    public gameManager game; //reference to the game manager
 
     // Use this for initialization
     void Start()
@@ -20,6 +19,7 @@ public class CheckAnswers_L4 : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        //if all this is true
         if (sr[0].sprite != filled &&
             sr[1].sprite != filled &&
             sr[2].sprite != filled &&
@@ -121,8 +121,10 @@ public class CheckAnswers_L4 : MonoBehaviour {
             sr[98].sprite != filled &&
             sr[99].sprite != filled)
         {
-            gm.isL4Complete = true;
+            //then set the level 4 bool in the game manager to true and load the success screen
+            game.isL4Complete = true;
             SceneManager.LoadScene("Updates");
+            
         }
 
     }

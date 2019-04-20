@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//this file exits the game when the exit button is pushed in the main menu
 public class exitGame : MonoBehaviour {
 
 	// Use this for initialization
@@ -16,6 +17,6 @@ public class exitGame : MonoBehaviour {
 
     private void OnMouseDown()
     {
-        Application.Quit();
+        Application.Quit(); //quit game
     }
 }

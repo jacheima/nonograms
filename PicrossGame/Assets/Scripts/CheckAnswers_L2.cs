@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//this file checks the answers for level 2
+
 public class CheckAnswers_L2 : MonoBehaviour {
 
-    public SpriteRenderer[] sr;
-    public Sprite empty;
-    public Sprite filled;
-    public Sprite xedOut;
+    public SpriteRenderer[] sr; //an array that holds the sprite renderers that are used in reference to this script
+    public Sprite filled; // reference to the filled sprite that is a condition for the if statement below
 
-    private gameManager gm;
+    public gameManager game;
 
     // Use this for initialization
     void Start()
@@ -21,8 +21,9 @@ public class CheckAnswers_L2 : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (sr[0].sprite != filled &&
-            sr[1].sprite == filled &&
+        //if all of this is tru
+        if (sr[0].sprite != filled && //the sprite renderer is not equal to the sprite filled
+            sr[1].sprite == filled && // the sprite renderer is equal to the sprite filled
             sr[2].sprite == filled &&
             sr[3].sprite == filled &&
             sr[4].sprite != filled &&
@@ -47,8 +48,10 @@ public class CheckAnswers_L2 : MonoBehaviour {
             sr[23].sprite == filled &&
             sr[24].sprite != filled)
         {
-            gm.isL2Complete = true;
+            //then set the level 2 bool to true in the game manager and load the success screen
+            game.isL2Complete = true;
             SceneManager.LoadScene("Success");
+            
         }
 
     }

@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//this file checks the answers for level 3
 public class checkAnswers_L3 : MonoBehaviour {
 
 
-    public SpriteRenderer[] sr;
-    public Sprite empty;
-    public Sprite filled;
-    public Sprite xedOut;
+    public SpriteRenderer[] sr; //an array that holds all the sprite renders in reference to the if statement below
 
-    private gameManager gm;
+    public Sprite filled;// holds the sprite that the if statement checks against below
+
+
+    public gameManager game; // reference to the game manager
 
     // Use this for initialization
     void Start()
@@ -22,6 +23,7 @@ public class checkAnswers_L3 : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        //If this is true
         if (sr[0].sprite != filled &&
             sr[1].sprite == filled &&
             sr[2].sprite == filled &&
@@ -48,8 +50,11 @@ public class checkAnswers_L3 : MonoBehaviour {
             sr[23].sprite == filled &&
             sr[24].sprite == filled )
         {
-            gm.isL3Complete = true;
+            //then set the level 3 bool to true in the game manager and load the success screen
+            game.isL3Complete = true;
             SceneManager.LoadScene("Success");
+            
+
         }
 
     }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//this file loads the main menu 
 public class goToMainMenu : MonoBehaviour {
 
 	// Use this for initialization
@@ -17,6 +18,6 @@ public class goToMainMenu : MonoBehaviour {
 
     private void OnMouseDown()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("MainMenu"); //load main menu
     }
 }

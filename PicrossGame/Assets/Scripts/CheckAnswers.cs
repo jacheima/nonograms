@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//This file checks to see if the boxes are filled in correctly for level 1
 public class CheckAnswers : MonoBehaviour {
 
-    public SpriteRenderer[] sr;
-    public Sprite empty;
-    public Sprite filled;
-    public Sprite xedOut;
+    public SpriteRenderer[] sr; //Holds all the SpriteRenderers
 
-    private gameManager gm;
+    public Sprite filled; // holds the sprite for filled as a reference
+
+
+    public gameManager game; // reference to gameManager
 
 	// Use this for initialization
 	void Start () {
@@ -19,6 +20,7 @@ public class CheckAnswers : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        //every frame it checks to see if this if statement is true
 		if(sr[0].sprite != filled &&
            sr[1].sprite == filled &&
            sr[2].sprite != filled &&
@@ -45,8 +47,10 @@ public class CheckAnswers : MonoBehaviour {
            sr[23].sprite != filled &&
            sr[24].sprite != filled )
 		{
-		    gm.isL1Complete = true;
+            //if it is it sets the level 1 complete bool in the game manager to true and loads the success screen
+		    game.isL1Complete = true;
             SceneManager.LoadScene("Success");
+		    
         }
 
     }

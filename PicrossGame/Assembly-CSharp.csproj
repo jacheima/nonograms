@@ -61,10 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AudioSingleton.cs" />
-    <Compile Include="Assets\CheckForCompleted.cs" />
-    <Compile Include="Assets\SaveLoad.cs" />
-    <Compile Include="Assets\Scripts\boxes.cs" />
+    <Compile Include="Assets\Scripts\AudioSingleton.cs" />
     <Compile Include="Assets\Scripts\CheckAnswers.cs" />
     <Compile Include="Assets\Scripts\CheckAnswers_L2.cs" />
     <Compile Include="Assets\Scripts\checkAnswers_L3.cs" />
@@ -78,7 +75,6 @@
     <Compile Include="Assets\Scripts\GoToLevelSelect.cs" />
     <Compile Include="Assets\Scripts\goToMainMenu.cs" />
     <Compile Include="Assets\Scripts\toggleBoxes.cs" />
-    <Compile Include="Assets\Scripts\ToggleMarker.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/jacheima/Desktop/PicrossSpaceOdessy/PicrossGame/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
