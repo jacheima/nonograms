@@ -9,6 +9,8 @@ public class CheckAnswers_L4 : MonoBehaviour {
     public Sprite filled;
     public Sprite xedOut;
 
+    private gameManager gm;
+
     // Use this for initialization
     void Start()
     {
@@ -119,6 +121,7 @@ public class CheckAnswers_L4 : MonoBehaviour {
             sr[98].sprite != filled &&
             sr[99].sprite != filled)
         {
+            gm.isL4Complete = true;
             SceneManager.LoadScene("Updates");
         }
 

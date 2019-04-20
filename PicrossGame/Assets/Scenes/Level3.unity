@@ -255,6 +255,48 @@ SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 212556766743575934, guid: 2552740dcf8d0b844919f142633dbd23,
     type: 2}
   m_PrefabInternal: {fileID: 1775767344}
+--- !u!1001 &630138589
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4094427045592840, guid: a59f712369397ab4cbb5aa2e58db5637, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 6.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 4094427045592840, guid: a59f712369397ab4cbb5aa2e58db5637, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -4.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4094427045592840, guid: a59f712369397ab4cbb5aa2e58db5637, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4094427045592840, guid: a59f712369397ab4cbb5aa2e58db5637, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4094427045592840, guid: a59f712369397ab4cbb5aa2e58db5637, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4094427045592840, guid: a59f712369397ab4cbb5aa2e58db5637, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4094427045592840, guid: a59f712369397ab4cbb5aa2e58db5637, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4094427045592840, guid: a59f712369397ab4cbb5aa2e58db5637, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a59f712369397ab4cbb5aa2e58db5637, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!212 &718181789 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 212402186693250796, guid: 2552740dcf8d0b844919f142633dbd23,

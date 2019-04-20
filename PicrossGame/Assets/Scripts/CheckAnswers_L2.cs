@@ -10,6 +10,8 @@ public class CheckAnswers_L2 : MonoBehaviour {
     public Sprite filled;
     public Sprite xedOut;
 
+    private gameManager gm;
+
     // Use this for initialization
     void Start()
     {
@@ -45,6 +47,7 @@ public class CheckAnswers_L2 : MonoBehaviour {
             sr[23].sprite == filled &&
             sr[24].sprite != filled)
         {
+            gm.isL2Complete = true;
             SceneManager.LoadScene("Success");
         }
 

@@ -1,14 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
+
+[System.Serializable]
 
 public class toggleBoxes : MonoBehaviour {
 
-    public Sprite empty;
-    public Sprite filled;
-    public Sprite xedOut;
+
+
+    public Sprite[] state;
+    public int index = 0;
 
     public SpriteRenderer sr;
+    
     
 
 	// Use this for initialization
@@ -17,30 +23,38 @@ public class toggleBoxes : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
+	void Update ()
+	{
+
+	    PlayerPrefs.GetInt("Index", index);
 	}
 
     private void OnMouseDown()
     {
-        if(sr.sprite == empty)
+
+        Debug.Log("User is Clicking in Box 0");
+
+        if (index < state.Length)
         {
-            sr.sprite = filled;
+            index++;
+            sr.sprite = state[index];
+            return;
+
+        }
+
+        if (index >= state.Length)
+        {
+            index = 0;
+            sr.sprite = state[index];
             return;
         }
 
-        if (sr.sprite == filled)
-        {
-            sr.sprite = xedOut;
-            return;
-        }
 
-        if(sr.sprite == xedOut)
-        {
-            sr.sprite = empty;
-            return;
-        }
+
+
 
 
     }
+
+  
 }

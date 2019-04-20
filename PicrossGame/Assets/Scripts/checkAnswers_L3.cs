@@ -11,6 +11,8 @@ public class checkAnswers_L3 : MonoBehaviour {
     public Sprite filled;
     public Sprite xedOut;
 
+    private gameManager gm;
+
     // Use this for initialization
     void Start()
     {
@@ -46,6 +48,7 @@ public class checkAnswers_L3 : MonoBehaviour {
             sr[23].sprite == filled &&
             sr[24].sprite == filled )
         {
+            gm.isL3Complete = true;
             SceneManager.LoadScene("Success");
         }
 
