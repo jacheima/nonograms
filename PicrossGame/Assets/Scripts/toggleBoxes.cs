@@ -37,19 +37,17 @@ public class toggleBoxes : MonoBehaviour {
         if (index < state.Length) // if the index is less than the length of the state array
         {
             index++;//then increment the index
-            sr.sprite = state[index];//change the sprite to the sprite at that index
-            return;//and exit
-
+            
+            
         }
 
         if (index >= state.Length) // if the index is greater than or equal to the length of the state array
         {
             index = 0; //set index to 0
-            sr.sprite = state[index]; // change the sprite to the sprite at that index
-            return; // and exit
+            
         }
 
-
+        sr.sprite = state[index];//change the sprite to the sprite at that index
 
 
 
